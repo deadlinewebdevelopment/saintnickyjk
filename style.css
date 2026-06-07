@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d0d0d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* HERO */
+
+.hero {
+    height: 520px;
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    text-align: center;
+    background: rgba(0,0,0,.45);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #d6c49b;
+}
+
+/* ABOUT */
+
+.about {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    color: #d6c49b;
+}
+
+/* EP */
+
+.ep-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.album-cover img {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255,255,255,.15);
+}
+
+.album-info {
+    flex: 1;
+}
+
+.album-info h2 {
+    color: #d6c49b;
+    margin-bottom: 15px;
+}
+
+.album-info ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.album-info li {
+    margin-bottom: 10px;
+    border-left: 3px solid #d6c49b;
+    padding-left: 12px;
+}
+
+/* MUSIC */
+
+.music {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.music h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d6c49b;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #222;
+}
+
+footer a {
+    color: #d6c49b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    opacity: .8;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .ep-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .album-cover img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
